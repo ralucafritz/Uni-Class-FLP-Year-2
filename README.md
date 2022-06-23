@@ -10,7 +10,7 @@ In this repository you can find all homeworks and resources regarding my `Comput
 - [ ] [Laboratory 5](/L05)
 - [x] [Laboratory 6](/L06)
 - [ ] [Laboratory 7](/L07)
-- [ ] [Laboratory 8](/L08)
+- [x] [Laboratory 8](/L08)
 - [ ] [Laboratory 9](/L09)
 - [ ] [~~Laboratory 10~~](/L10)
 - [ ] [Laboratory 11](/L11)

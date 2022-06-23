@@ -1,6 +1,6 @@
 ##### Fritz Raluca-Mihaela G243
-# <center> Prolog </center>
-## <center> Laboratorul 6 - Seminar 1 </center>
+# <center> FLP </center>
+## <center> Laboratorul 6 </center>
 
 
 Recapitularea Logicii propozitionale 

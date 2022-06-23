@@ -1,4 +1,4 @@
-# <center> Prolog </center>
+# <center> FLP </center>
 
 ## <center> Laboratorul 1 </center>
 

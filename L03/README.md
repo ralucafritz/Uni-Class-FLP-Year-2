@@ -1,5 +1,5 @@
 ##### Fritz Raluca-Mihaela G243
-# <center> Prolog </center>
+# <center> FLP </center>
 ## <center> Laboratorul 3 </center>
 
 

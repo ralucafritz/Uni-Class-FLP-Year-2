@@ -173,7 +173,7 @@ Demosntratie:
 | (3) | `│`p                                | asumptie = presupunem p `True`
 | (4) | `│`q                                | →e(1,3) = eliminam → dintre liniile (2) si (3) `=>` q `True`
 | (5) | `│`¬q                               | →e(2,3) = eliminam → dintre liniile (2) si (3) `=>` ¬q `True`
-| (6) | `│`                                 | ¬e(4,5) = eliminam ¬ din liniile (5) `=>` ABSURDITATE ⊥ (q si ¬q erau adevarate in acelasi timp => contradictie `=>` ¬p `True`)
+| (6) | `│`⊥                                | ¬e(4,5) = eliminam ¬ din liniile (5) `=>` ABSURDITATE ⊥ (q si ¬q erau adevarate in acelasi timp => contradictie `=>` ¬p `True`)
 | (7) | ¬p                                  | ¬i(3-6) = introducem ¬ in calupul liniilor (3)-(6) `=>` ¬ p `True`
 
 ### Exercitiul 3:

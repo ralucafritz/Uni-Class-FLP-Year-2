@@ -122,7 +122,7 @@ parent(mary,harry)
 	    parent(Z,P),
 	    S \= P.
 	```
-S \= P ====== S != P
+S `\=` P ====== S `!=` P
 	
 6) brother_of/2
 	```prolog

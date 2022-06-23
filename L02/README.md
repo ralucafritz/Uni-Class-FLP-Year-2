@@ -59,7 +59,7 @@ fib(N,Res) :-
 
 `% fb(N-1,Res1) + fib(N-2,Res2)` -> [NU AM VOIE SA FAC UN APEL IN FORMA ACEASTA]()
 
-![](/243_2_2.png)
+![](/L02/243_2_2.png)
 
 `Tema Bonus`: implementarea eficienta cu memorizare a sirului de fib
 
@@ -140,7 +140,7 @@ element_of(Elem, [ _ | Tail)]) :- element_of(Elem, Tail).
 % concat_lists([1,2,3], [4,5,6], LR)
 % LR = [1,2,3,4,5,6]
 ```
-![](/243_2_4.png)
+![](/L02/243_2_4.png)
 
 ```prolog
 concat_lists([], L, L).
@@ -241,7 +241,7 @@ test:
 Result = 32.
 ```
 
-![](/243_2_5.png)
+![](/L02/243_2_5.png)
 
 #### Exercitiul 5
 `max / 2` cauta elementul maxim intr-o lista

@@ -14,11 +14,11 @@ Doua abordari:
   - o proprietate poate fi demonstrata
   - simbol: |-
 
-Ex:
-|= φ inseamna φ tautologie
-|- φ inseamna φ demonstrabila sau φ teorema
+Ex:  
+|= φ inseamna φ tautologie  
+|- φ inseamna φ demonstrabila sau φ teorema  
 
-In logica propozitionala, pentru a verifica daca o formula φ este tautologie, este suficient sa ii construim tabelul de adevar: 
+In logica propozitionala, pentru a verifica daca o formula φ este tautologie, este suficient sa ii construim tabelul de adevar:  
 | p | ¬p | | p | q | p `/\` q | | p | q | p `\/` q | | p | q | p → q |
 |---|----|-|---|---|--------|-|---|---|--------|-|---|---|-------|
 | 0 | 1 | | 0 | 0 | 0 | | 0 | 0 | 0 | | 0 | 0 | 1 |
@@ -26,30 +26,30 @@ In logica propozitionala, pentru a verifica daca o formula φ este tautologie, e
 |   |   | | 1 | 0 | 0 | | 1 | 0 | 1 | | 1 | 0 | 0 |
 |   |   | | 1 | 1 | 1 | | 1 | 1 | 1 | | 1 | 1 | 1 |
 
-e : Var → {0, 1} 
-e+ : Form → {0, 1} extinde functia e pe formule
+e : Var → {0, 1}   
+e+ : Form → {0, 1} extinde functia e pe formule  
 
-e+(v) = e(v) 
-e+(p `/\` q) =  e+(p) `/\` e+(q)
-e+(p → q) + e+(p) → e+(q)
+e+(v) = e(v)   
+e+(p `/\` q) =  e+(p) `/\` e+(q)  
+e+(p → q) + e+(p) → e+(q)  
 
-Ce inseamna cand φ este tautologie?
+Ce inseamna cand φ este tautologie?  
   - are 1 pe toata coloana
-Ce inseamnca cand φ este satisfiabila?
+Ce inseamnca cand φ este satisfiabila?  
   - are cel putin un 1 pe coloana
 
 ### Exercitiul 1:
 Aratati ca urmatoarea forumla este o tautologie.
 
-v<sub>1</sub> `\/` v<sub>2</sub> → v<sub>3</sub> ↔ (v<sub>1</sub>→v<sub>3</sub>) `/\` (v<sub>2</sub>→v<sub>3</sub>)
-A ↔ B
-Cate variabile propozitionale am? 
-3:
+v<sub>1</sub> `\/` v<sub>2</sub> → v<sub>3</sub> ↔ (v<sub>1</sub>→v<sub>3</sub>) `/\` (v<sub>2</sub>→v<sub>3</sub>)  
+A ↔ B   
+Cate variabile propozitionale am?   
+3:  
 - v<sub>1</sub> 
 - v<sub>2</sub>
-- v<sub>3</sub>
-Cate lini am in tablelul de adevar?
-3 variabile `=>`  2<sup>3</sup> = 8
+- v<sub>3</sub>  
+Cate lini am in tablelul de adevar?  
+3 variabile `=>`  2<sup>3</sup> = 8  
 
 | v<sub>1</sub> | v<sub>2</sub> | v<sub>3</sub> | v<sub>1</sub>`\/`v<sub>2</sub> | v<sub>1</sub> `\/` v<sub>2</sub> → v<sub>3</sub> = A | v<sub>1</sub> → v<sub>3</sub> | v<sub>2</sub> → v<sub>3</sub> | (v<sub>1</sub>→v<sub>3</sub>) `/\` (v<sub>2</sub>→v<sub>3</sub>) = B | A ↔ B |
 |---|---|---|---|---|---|---|---|---|
@@ -65,12 +65,12 @@ Cate lini am in tablelul de adevar?
 Pe coloana A ↔ B am obtinut doar 1, ceea ce inseamna ca formula A ↔ B este o tautologie.
 
 #### Axiome:
-(A1) φ → (ψ → φ)
-(A2) (φ →(ψ → χ)) → ((φ → ψ) → (φ → χ))
-(A3) (¬ψ → ¬φ) → (φ → ψ)
-![](/regulaDeductie.jpg)
-![](/teoremaDeductieNaturala%2BReguli.jpg)
-Traducere sistem de reguli:
+(A1) φ → (ψ → φ)  
+(A2) (φ →(ψ → χ)) → ((φ → ψ) → (φ → χ))  
+(A3) (¬ψ → ¬φ) → (φ → ψ)  
+![](/L06/echivalent.jpg)  
+![](/L06/teoremaDeductieNaturala+Reguli.jpg)  
+Traducere sistem de reguli:   
 | Reguli de introducere / conjunctie | Reguli de eliminare |
 |-----------------------|---------------------|
 | (1) φ `True`, (2) ψ `True` din (1) si (2) `=>` φ `/\`ψ `True` | (1) φ `/\`ψ `True` `=>` φ `True`, (2) φ `/\`ψ `True` `=>` ψ `True`
@@ -83,19 +83,19 @@ Traducere sistem de reguli:
 ### Deductie naturala:
 ### Exercitiul 2: 
 
-a) (p `/\` q) `/\` r, s`/\`t `|-` q `/\`s
-`|-` = sistem sintactic => sistem deductiv 
+a) (p `/\` q) `/\` r, s`/\`t `|-` q `/\`s  
+`|-` = sistem sintactic => sistem deductiv   
 
-(p `/\` q) `/\` r, s`/\`t = SECVENT
+(p `/\` q) `/\` r, s`/\`t = SECVENT  
 
-Demonstrez ca 
-  - (p `/\` q) `/\` r, s`/\`t
-este un secvent valid pentru 
-  - q `/\`s
-ceea ce inseamna  ca formula q `/\`s se poate demonstra din ipotezele:
-  - (p `/\` q) `/\` r
-  - s`/\`t
-utilizand sistemul deductiei naturale.
+Demonstrez ca   
+  - (p `/\` q) `/\` r, s`/\`t  
+este un secvent valid pentru   
+  - q `/\`s  
+ceea ce inseamna  ca formula q `/\`s se poate demonstra din ipotezele:  
+  - (p `/\` q) `/\` r  
+  - s`/\`t  
+utilizand sistemul deductiei naturale.  
 
 Demonstratie:
 | No. | formula |  |
@@ -107,10 +107,10 @@ Demonstratie:
 | (5) | s                   | `/\`e1(2) = eliminam `/\` pe linia (2)`=>` s `True` 
 | (6) | q `/\` s            | `/\`i(4,5) = introducem `/\` intre liniile (4) si (5) `=>` q `/\` s `True`
 
-b) p, ¬¬(q`/\`r) `|-` ¬¬p `/\` r
-p, ¬¬(q`/\`r) = SECVENT
+b) p, ¬¬(q`/\`r) `|-` ¬¬p `/\` r  
+p, ¬¬(q`/\`r) = SECVENT  
 
-Trebuie sa demonstram ¬¬p `/\` r
+Trebuie sa demonstram ¬¬p `/\` r  
 
 Demonstratie:
 | No. | formula |  |
@@ -122,11 +122,11 @@ Demonstratie:
 | (5) | r                   | `/\`e2(4) = eliminam `/\` din (4) `=>` r `True`
 | (6) | ¬¬p `/\` r          | `/\`i(3,5) = introducem `/\` intre liniile (3) si (5) `=>` ¬¬p `/\` r `True`
 
-c) p `/\` q → r `|-` p → (q → r)
+c) p `/\` q → r `|-` p → (q → r)  
 
-p `/\` q → r = SECVENT
+p `/\` q → r = SECVENT  
 
-Trebuie sa demonstram p → (q → r)
+Trebuie sa demonstram p → (q → r)  
 
 Demonstratie:
 | No. | formula |  |
@@ -139,11 +139,11 @@ Demonstratie:
 | (6) | `|` q → r           | →i(3-5) = introducem implicatia → intre liniile (3)-(5) => q → r `True`
 | (7) | p → q → r           | →i(2-6) = introducem implicatia → intre liniile (2)-(6) => p → q → r `True`
 
-d) p `/\` (q `\/` r) `|-` (p `/\` q) `\/` (p `/\` r)
-p `/\` (q `\/` r) = SECVENT
-Trebuie sa demonstram (p `/\` q) `\/` (p `/\` r)
+d) p `/\` (q `\/` r) `|-` (p `/\` q) `\/` (p `/\` r)  
+p `/\` (q `\/` r) = SECVENT  
+Trebuie sa demonstram (p `/\` q) `\/` (p `/\` r)  
 
-Demonstratie:
+Demonstratie:  
 | No. | formula |  |
 |-----|---------|--|
 | (1) | p `/\` (q `\/` r)               | ipoteza
@@ -159,12 +159,12 @@ Demonstratie:
 |-----|---------------------------------|--------------------
 | (10)| (p `/\` q) `\/` (p `/\` r)      | `\/`e(3, 4-6, 7-9) = eliminare `\/` dintre liniile (3), (4-6) si (7-9)
 
-e) p → q, p → ¬ q `|-` ¬ p
+e) p → q, p → ¬ q `|-` ¬ p  
 
-p → q, p → ¬ q = SECVENT
+p → q, p → ¬ q = SECVENT  
 
-Trebuie sa demonstram ¬ p
-
+Trebuie sa demonstram ¬ p  
+ 
 Demosntratie: 
 | No. | formula |  |
 |-----|---------|--|
@@ -178,20 +178,20 @@ Demosntratie:
 
 ### Exercitiul 3:
 
-Sa se demonstreze urmatoarele reguli in deductie naturala:
-- Modus tollends:
-p → q `True`, dar ¬ q `True` `=>` ¬p 
-- reductio ad absurdum (RAA):
-cutie:
-`|`¬p
-`|`.
-`|`.
-`|`⊥
------ `=>` RAA 
-`=>` p `True`
+Sa se demonstreze urmatoarele reguli in deductie naturala:  
+- Modus tollends:  
+p → q `True`, dar ¬ q `True` `=>` ¬p   
+- reductio ad absurdum (RAA):  
+cutie:  
+`|`¬p  
+`|`.  
+`|`.  
+`|`⊥  
+----- `=>` RAA   
+`=>` p `True`  
 
 
-a) p → q, ¬q  `|-` ¬p
+a) p → q, ¬q  `|-` ¬p  
 
 
 Demonstratie:
@@ -204,7 +204,7 @@ Demonstratie:
 | (5) | `|` ⊥                       | ¬e(2,4)
 | (6) | ¬p                          | ¬i(3-5)
 
-b) ¬p → ⊥ `|-` p
+b) ¬p → ⊥ `|-` p  
 
 Demonstratie:
 | No. | formula |  |
@@ -218,16 +218,16 @@ Demonstratie:
 ### Exercitiul 4:
 
 fie n `>=` 1 si φ<sub>1</sub>,....,φ<sub>n</sub>, φ formule. Demosntrati ca:
-`|-` φ<sub>1</sub> → (φ<sub>2</sub> → (....→ (φ<sub>n</sub> → φ)...))
+`|-` φ<sub>1</sub> → (φ<sub>2</sub> → (....→ (φ<sub>n</sub> → φ)...))  
 
-atunci 
-φ<sub>1</sub>, φ<sub>2</sub>,..., φ<sub>n</sub> `|-` φ
+atunci   
+φ<sub>1</sub>, φ<sub>2</sub>,..., φ<sub>n</sub> `|-` φ  
 
-Solutie: 
+Solutie:   
 
-Adaugam pe rand φ<sub>1</sub>, φ<sub>2</sub>,..., φ<sub>n</sub> ca sucventi valizi si aplicam mereu regula de →e.
+Adaugam pe rand φ<sub>1</sub>, φ<sub>2</sub>,..., φ<sub>n</sub> ca sucventi valizi si aplicam mereu regula de →e.  
 
-##### Pasul 1: adaug φ<sub>1</sub> ca secvent valid.
+##### Pasul 1: adaug φ<sub>1</sub> ca secvent valid.  
 
 | No. | formula |  |
 |-----|---------|--|
@@ -235,7 +235,7 @@ Adaugam pe rand φ<sub>1</sub>, φ<sub>2</sub>,..., φ<sub>n</sub> ca sucventi v
 | (2) | φ<sub>1</sub> → (φ<sub>2</sub> → (....→ (φ<sub>n</sub> → φ)...))        | ipoteza
 | (3) | (φ<sub>2</sub> → (....→ (φ<sub>n</sub> → φ)...))                        | →e(1,2)
 
-Asta inseamna ca:
+Asta inseamna ca:  
 
 φ<sub>1</sub> `|-`  (φ<sub>2</sub> → (....→ (φ<sub>n</sub> → φ)...))
 
@@ -252,40 +252,40 @@ Asta inseamna ca:
 | (3) | φ                                                                       | →e(1,2)
 
 ##### Si obtin ca:
-φ<sub>1</sub>, φ<sub>2</sub>,..., φ<sub>n</sub> `|-` φ
+φ<sub>1</sub>, φ<sub>2</sub>,..., φ<sub>n</sub> `|-` φ  
 
 ### Exercitiul 5:
 
-Sa se scrie reguli de introducere si eliminare a echivalentei logice in deductia naturala.
+Sa se scrie reguli de introducere si eliminare a echivalentei logice in deductia naturala.  
 
-↔ i ↔ e
+↔ i ↔ e  
 
-p ↔ q ~ (p → q) `/\` (q → p)
-Reguli de introducere si eliminare:
-![](/echivalent.jpg)
+p ↔ q ~ (p → q) `/\` (q → p)  
+Reguli de introducere si eliminare:  
+![](/L06/echivalent.jpg)  
 
 ### Exercitiul 6:
 
-(i1) Toti scriitorii care inteleg natura umana sunt intelepti.  
-(i2) Un scriitor care este poet adevarat poate trezi sentimente puternice.   
-(i3) Shakespeare este scriitorul care a scris "Hamlet".   
-(i4) Un scriitor care trezeste sentimente puternice intelege natura umana.   
-(i5) Numai un poet adevarat putea scrie "Hamlet".  
+(i1) Toti scriitorii care inteleg natura umana sunt intelepti.    
+(i2) Un scriitor care este poet adevarat poate trezi sentimente puternice.     
+(i3) Shakespeare este scriitorul care a scris "Hamlet".     
+(i4) Un scriitor care trezeste sentimente puternice intelege natura umana.     
+(i5) Numai un poet adevarat putea scrie "Hamlet".    
 
-Shakespeare este intelept.
+Shakespeare este intelept.  
 
-Solutie:
+Solutie:  
 
-p `/\` q → r ~ p → (q → r)
+p `/\` q → r ~ p → (q → r)  
 
-(i1) Scriitor(W) `/\` NaturaUmana(HN) → Intelept(C) 
-(i2) Scriitor → (PoetAdevarat(Poet) → SentimentePuternice(SP))
-(i3) Shakespeare → Scriitor /\ Hamlet(H)
-(i4) Scriitor → (Sentimenteputernice → NaturaUmana)
-(i5) PoetAdevarat → Hamlet
-(c) Shakespeare → Intelept
+(i1) Scriitor(W) `/\` NaturaUmana(HN) → Intelept(C)   
+(i2) Scriitor → (PoetAdevarat(Poet) → SentimentePuternice(SP))  
+(i3) Shakespeare → Scriitor /\ Hamlet(H)  
+(i4) Scriitor → (Sentimenteputernice → NaturaUmana)  
+(i5) PoetAdevarat → Hamlet  
+(c) Shakespeare → Intelept  
 
-`|-` S → C
+`|-` S → C  
 
 | No. | formula |  |
 |-----|---------|--|

@@ -3,8 +3,13 @@
 ## <center> Laboratorul 3 </center>
 
 
-Laboratorul 1: sintaxa limbajului Prolog, ce este un program in Prolog + exemple
-Laboratorul 2: recursivitate si liste
+Laboratorul 1: 
+- sintaxa limbajului Prolog 
+- ce este un program in Prolog 
+- exemple
+Laboratorul 2: 
+- recursivitate 
+- liste 
 concat_liste/3, reverse/3
 
 Laboratorul 3: Cum raspunde Prolog intrebarilor?

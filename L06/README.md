@@ -132,11 +132,11 @@ Demonstratie:
 | No. | formula |  |
 |-----|---------|--|
 | (1) | p `/\` q → r        | ipoteza
-| (2) | `|`p                | asumptie = presupunem: p `True`
-| (3) | `|` `|` q           | asumptie  = presupunem: q `True`
-| (4) | `|` `|` p `/\`q     | `/\`i(2,3) = introducem `/\` intre liniile (2) si (3) `=>` p `/\` q `True`
-| (5) | `|` `|` r           | →e(1,4) = eliminam implicatia → dintre liniile (1) si (4) => r `True`
-| (6) | `|` q → r           | →i(3-5) = introducem implicatia → intre liniile (3)-(5) => q → r `True`
+| (2) | `│`p                | asumptie = presupunem: p `True`
+| (3) | `│` `│` q           | asumptie  = presupunem: q `True`
+| (4) | `│` `│` p `/\`q     | `/\`i(2,3) = introducem `/\` intre liniile (2) si (3) `=>` p `/\` q `True`
+| (5) | `│` `│` r           | →e(1,4) = eliminam implicatia → dintre liniile (1) si (4) => r `True`
+| (6) | `│` q → r           | →i(3-5) = introducem implicatia → intre liniile (3)-(5) => q → r `True`
 | (7) | p → q → r           | →i(2-6) = introducem implicatia → intre liniile (2)-(6) => p → q → r `True`
 
 d) p `/\` (q `\/` r) `|-` (p `/\` q) `\/` (p `/\` r)  
@@ -149,13 +149,13 @@ Demonstratie:
 | (1) | p `/\` (q `\/` r)               | ipoteza
 | (2) | p                               | `/\`e(1)
 | (3) | q `\/` r                        | `\/`e(1)
-| (4) | `|` q                           | prima asumptie = presupunem q `True`
-| (5) | `|` p `/\` q                    | `/\`i(2,4) =  introducem `/\` intre liniile (2) si (4) `=>` p `/\` q `True`
-| (6) | `|`(p `/\` q) `\/` (p `/\` r)   | `\/`i1(5) = introducem `\/` in linia (5) `=>` (p `/\` q) `\/` (p `/\` r)`True`
+| (4) | `│` q                           | prima asumptie = presupunem q `True`
+| (5) | `│` p `/\` q                    | `/\`i(2,4) =  introducem `/\` intre liniile (2) si (4) `=>` p `/\` q `True`
+| (6) | `│`(p `/\` q) `\/` (p `/\` r)   | `\/`i1(5) = introducem `\/` in linia (5) `=>` (p `/\` q) `\/` (p `/\` r)`True`
 |-----|---------------------------------|--------------------
-| (7) | `|` r                           | a doua asumptie = presupunem r `True`
-| (8) | `|` p `/\` r                    | `/\`i(2,7) = introducem `/\` intre liniile (2) si (7) `=>` p `/\` r `True`
-| (9) | `|`(p `/\` q) `\/` (p `/\` r)   | `\/`i1(8) = introducem `\/` in linia (8) `=>` (p `/\` q) `\/` (p `/\` r)`True`
+| (7) | `│` r                           | a doua asumptie = presupunem r `True`
+| (8) | `│` p `/\` r                    | `/\`i(2,7) = introducem `/\` intre liniile (2) si (7) `=>` p `/\` r `True`
+| (9) | `│`(p `/\` q) `\/` (p `/\` r)   | `\/`i1(8) = introducem `\/` in linia (8) `=>` (p `/\` q) `\/` (p `/\` r)`True`
 |-----|---------------------------------|--------------------
 | (10)| (p `/\` q) `\/` (p `/\` r)      | `\/`e(3, 4-6, 7-9) = eliminare `\/` dintre liniile (3), (4-6) si (7-9)
 
@@ -170,10 +170,10 @@ Demosntratie:
 |-----|---------|--|
 | (1) | p → q                               | ipoteza
 | (2) | p → ¬ q                             | ipoteza
-| (3) | `|`p                                | asumptie = presupunem p `True`
-| (4) | `|`q                                | →e(1,3) = eliminam → dintre liniile (2) si (3) `=>` q `True`
-| (5) | `|`¬q                               | →e(2,3) = eliminam → dintre liniile (2) si (3) `=>` ¬q `True`
-| (6) | `|`                                 | ¬e(4,5) = eliminam ¬ din liniile (5) `=>` ABSURDITATE ⊥ (q si ¬q erau adevarate in acelasi timp => contradictie `=>` ¬p `True`)
+| (3) | `│`p                                | asumptie = presupunem p `True`
+| (4) | `│`q                                | →e(1,3) = eliminam → dintre liniile (2) si (3) `=>` q `True`
+| (5) | `│`¬q                               | →e(2,3) = eliminam → dintre liniile (2) si (3) `=>` ¬q `True`
+| (6) | `│`                                 | ¬e(4,5) = eliminam ¬ din liniile (5) `=>` ABSURDITATE ⊥ (q si ¬q erau adevarate in acelasi timp => contradictie `=>` ¬p `True`)
 | (7) | ¬p                                  | ¬i(3-6) = introducem ¬ in calupul liniilor (3)-(6) `=>` ¬ p `True`
 
 ### Exercitiul 3:
@@ -183,10 +183,10 @@ Sa se demonstreze urmatoarele reguli in deductie naturala:
 p → q `True`, dar ¬ q `True` `=>` ¬p   
 - reductio ad absurdum (RAA):  
 cutie:  
-`|`¬p  
-`|`.  
-`|`.  
-`|`⊥  
+`│`¬p  
+`│`.  
+`│`.  
+`│`⊥  
 ----- `=>` RAA   
 `=>` p `True`  
 
@@ -199,9 +199,9 @@ Demonstratie:
 |-----|---------|--|
 | (1) | p → q                       | ipoteza
 | (2) | ¬q                          | ipoteza
-| (3) | `|` p                       | asumptie
-| (4) | `|` q                       | →e(1)
-| (5) | `|` ⊥                       | ¬e(2,4)
+| (3) | `│` p                       | asumptie
+| (4) | `│` q                       | →e(1)
+| (5) | `│` ⊥                       | ¬e(2,4)
 | (6) | ¬p                          | ¬i(3-5)
 
 b) ¬p → ⊥ `|-` p  
@@ -210,8 +210,8 @@ Demonstratie:
 | No. | formula |  |
 |-----|---------|--|
 | (1) | ¬p → ⊥                      | ipoteza
-| (2) | `|` ¬p                      | asumptie
-| (3) | `|` ⊥                       | →e(1,2)    
+| (2) | `│` ¬p                      | asumptie
+| (3) | `│` ⊥                       | →e(1,2)    
 | (4) | ¬¬p                         | ¬i(2-3)
 | (5) | p                           | ¬¬e(4)
 
@@ -294,16 +294,16 @@ p `/\` q → r ~ p → (q → r)
 | (3) | S → W `/\` H                        | ipoteza 
 | (4) | W → (SP → HN)                       | ipoteza 
 | (5) | Poet → H                            | ipoteza 
-| (6) | `|` S                               | asumptie
-| (7) | `|` W `/\` H                        | →e(3,6)
-| (8) | `|` W                               | `/\`e1(7)
-| (9) | `|` H                               | `/\`e2(7)
-| (10)| `|` SP → HN                         | →e(8,4)
-| (11)| `|` Poet → SP                       | →e(8,2)
-| (12)| `|` Poet                            | →e(9,5)
-| (13)| `|` SP                              |→e(11,12)
-| (14)| `|` HN                              |→e(10,13)
-| (15)| `|` W `/\` HN                       | `/\`i(8,14)
-| (16)| `|` C                               | →e(1,15)
+| (6) | `│` S                               | asumptie
+| (7) | `│` W `/\` H                        | →e(3,6)
+| (8) | `│` W                               | `/\`e1(7)
+| (9) | `│` H                               | `/\`e2(7)
+| (10)| `│` SP → HN                         | →e(8,4)
+| (11)| `│` Poet → SP                       | →e(8,2)
+| (12)| `│` Poet                            | →e(9,5)
+| (13)| `│` SP                              |→e(11,12)
+| (14)| `│` HN                              |→e(10,13)
+| (15)| `│` W `/\` HN                       | `/\`i(8,14)
+| (16)| `│` C                               | →e(1,15)
 | (17)| S → C                               | →i(16)
 

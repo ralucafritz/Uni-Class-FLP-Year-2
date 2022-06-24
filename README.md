@@ -1,7 +1,7 @@
-# COMPUTER NETWORKING UNIVERSITY LABS
+# FUNDAMENTALS OF PROGRAMMING LANGUAGES UNIVERSITY LABS
 ## Repository contents
 
-In this repository you can find all homeworks and resources regarding my `Computer networking` class that I attended during my 2nd year of University.
+In this repository you can find all homeworks and resources regarding my `FUNDAMENTALS OF PROGRAMMING LANGUAGES` class that I attended during my 2nd year of University.
  
 - [x] [Laboratory 1](/L01)
 - [x] [Laboratory 2](/L02)

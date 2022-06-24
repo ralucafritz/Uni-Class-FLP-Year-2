@@ -15,23 +15,16 @@ Pentru orice formula in logica propozitionala, exista o forma normala conjunctiv
 
 O forma normala conjunctiva FNC este reprezentata de o formula formata din conjunctii de disjunctii de literali.  
 
-```math
-(l_{11} \lor l_{12}\lor...\lor l_{1n})\land ... \land (l_{m1}\lor l_{m2}\lor ...\lor l_{mk})  
-```
+![](formula1.jpg)
 Daca avem FNC pentru o formala φ, forma clauzala este reprezentata de urmatoarea multime de clauze, unde o clauza este o disjunctie de literali.  
 
-```math
-\mathcal{C} = \{\{l_{11},l_{12},...,l_{1n}\},...,\{l_{m1}, l_{m2}, ..., l_{mk}\}\}  
-```
-
+![](formula2.jpg)
 O formula φ este satisfiabila daca si numai daca FNC φ este satisfiabila, daca si numai daca multimea `C` este satisfiabila.  
 
 
 Regula Rezolutiei pastreaza satisfiabilitatea.  
 
-```math
-Rez \frac{C_1 \cup \{p\}, C_2 \cup \{\neg p\}}{C_1 \cup C_2}  
-```
+![](formula3.jpg)
 
 unde C<sub>1</sub>, C<sub>2</sub> sunt clauze  
 
@@ -47,60 +40,18 @@ Se repeta urmatorii pasi:
 Daca la final mutlimea `C` este vida, atunci formula este satisfiabila.
 Daca la un pas derivez o cutie, atunci nu este satisfiabila.  
 
-```math
-Rez \frac{\{p\}, \{\neg p \}}{\{\Box \}}  
-```
+![](formula4.jpg)
 
 #### Exercitiul 1:
 Fie urmatoarea formula in logica propozitionala. Sa se studieze daca formula este satisfiabila.  
 
-```math
-v_0\land(\neg v_0\lor v_1)\land(\neg v_1 \lor v_2 \lor v_3)\land(\neg v_3 \lor v_4)\land \neg v_4 \land \neg   
-```
+![](formula5.jpg)
 
 Scriem formula clauzala,  
+![](formula6.jpg)
+![](formula7.jpg)
+![](formula8.jpg)
 
-```math
-\mathcal{C} = \{\{v_0\}, \{\neg v_0, v_1\}, \{\neg v_1, v_2, v_3\}, \{\neg v_3, v_4\}, \{\neg v_4\}, \{\neg v_2\}\}  
-```
-```math
-C_1 = \{v_0\} *  
-```
-```math
-C_2 = \{\neg v_0, v_1\} *  
-```
-```math
-C_3 = \{\neg v_1, v_2, v_3\} *  
-```
-```math
-C_4 = \{\neg v_3, v_4\} *  
-```
-```math
-C_5 = \{\neg v_4\} *  
-``` 
-```math
-C_6 = \{\neg v_2\} *  
-```
-```math
-C_7 = \{v_0\} aplicand Rez(C_1, C_2) *  
-```
-```math
-C_8 = \{v_2, v_3\} aplicand Rez(C_7, C_3) *  
-```
-```math
-C_9 = \{v_2, v_4\} aplicand Rez(C_8, C_4) *  
-```
-```math
-C_{10} = \{v_4\} aplicand Rez(C_9, C_6) *  
-```
-```math
-C_{11} = \{\Box \} aplicand Rez(C_10, C_5)  
-```
-
-
-```math
-Rez \frac{\emptyset \cup \{v_0\}, \{v_1\}\cup \{\neg v_0\}}{\{v_1\}}  
-```
 
 Am obtinut o derivare a lui `BOX` ceea ce inseamna ca multimea de clauze nu este satisfiabila, ceea ce inseamna ca formula data nu este satisfiabila.    
 
@@ -110,16 +61,7 @@ Am obtinut o derivare a lui `BOX` ceea ce inseamna ca multimea de clauze nu este
 ``` prolog
 Q :- P_1,..., P_n.  
 ```
-
-```math
-P_1 \land ... \land P_n \to Q  
-```
-```math
-\equiv \neg(P_1 \land...\land P_n) \lor Q  
-```
-```math
-\equiv \neg P_1 \lor \neg P_2 \lor ...\lor \neg P_n) \lor Q  
-```
+![](formula9.jpg)
 
 #### Exercitiul 2:  
 

@@ -15,16 +15,16 @@ Pentru orice formula in logica propozitionala, exista o forma normala conjunctiv
 
 O forma normala conjunctiva FNC este reprezentata de o formula formata din conjunctii de disjunctii de literali.  
 
-![](formula1.jpg)
+![](formula1.jpg)  
 Daca avem FNC pentru o formala φ, forma clauzala este reprezentata de urmatoarea multime de clauze, unde o clauza este o disjunctie de literali.  
 
-![](formula2.jpg)
+![](formula2.jpg)  
 O formula φ este satisfiabila daca si numai daca FNC φ este satisfiabila, daca si numai daca multimea `C` este satisfiabila.  
 
 
 Regula Rezolutiei pastreaza satisfiabilitatea.  
 
-![](formula3.jpg)
+![](formula3.jpg)  
 
 unde C<sub>1</sub>, C<sub>2</sub> sunt clauze  
 
@@ -40,17 +40,17 @@ Se repeta urmatorii pasi:
 Daca la final mutlimea `C` este vida, atunci formula este satisfiabila.
 Daca la un pas derivez o cutie, atunci nu este satisfiabila.  
 
-![](formula4.jpg)
+![](formula4.jpg)  
 
 #### Exercitiul 1:
 Fie urmatoarea formula in logica propozitionala. Sa se studieze daca formula este satisfiabila.  
 
-![](formula5.jpg)
+![](formula5.jpg)  
 
 Scriem formula clauzala,  
-![](formula6.jpg)
-![](formula7.jpg)
-![](formula8.jpg)
+![](formula6.jpg)  
+![](formula7.jpg)  
+![](formula8.jpg)  
 
 
 Am obtinut o derivare a lui `BOX` ceea ce inseamna ca multimea de clauze nu este satisfiabila, ceea ce inseamna ca formula data nu este satisfiabila.    
@@ -61,7 +61,7 @@ Am obtinut o derivare a lui `BOX` ceea ce inseamna ca multimea de clauze nu este
 ``` prolog
 Q :- P_1,..., P_n.  
 ```
-![](formula9.jpg)
+![](formula9.jpg)  
 
 #### Exercitiul 2:  
 

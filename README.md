@@ -22,32 +22,31 @@ In this repository you can find all homeworks and resources regarding my `FUNDAM
 
 ### Laboratories:
 
-- [x] [Laboratory 1](/L01)
-- [x] [Laboratory 2](/L02)
-- [x] [Laboratory 3](/L03)
-- [x] [Laboratory 4](/L04)
-- [x] [Laboratory 5](/L05.pl)
-- [x] [Laboratory 6](/L06)
-- [x] [Laboratory 7](/L07.pdf)
-- [x] [Laboratory 8](/L08)
-- [x] [Laboratory 9](/L09.pdf)
-- [x] [Laboratory 10](/L10.pdf)
-- [x] [Laboratory 11](/L11.pdf)
-- [x] [Laboratory 12](/L12.pdf)
+- [x] [Laboratory 1](/Laboratories/L01)
+- [x] [Laboratory 2](/Laboratories/L02)
+- [x] [Laboratory 3](/Laboratories/L03)
+- [x] [Laboratory 4](/Laboratories/L04)
+- [x] [Laboratory 5](/Laboratories/L05.pl)
+- [x] [Laboratory 6](/Laboratories/L06)
+- [x] [Laboratory 7](/Laboratories/L07.pdf)
+- [x] [Laboratory 8](/Laboratories/L08)
+- [x] [Laboratory 9](/Laboratories/L09.pdf)
+- [x] [Laboratory 10](/Laboratories/L10.pdf)
+- [x] [Laboratory 11](/Laboratories/L11.pdf)
+- [x] [Laboratory 12](/Laboratories/L12.pdf)
 
 ### Seminaries:
 
-- [x] [Seminary 1](/S01.pdf)
-- [x] [Seminary 2](/S02.pdf)
-- [x] [Seminary 3](/S03.pdf)
-- [x] [Seminary 4](/S04.pdf)
+- [x] [Seminary 1](/Seminaries/S01.pdf)
+- [x] [Seminary 2](/Seminaries/S02.pdf)
+- [x] [Seminary 3](/Seminaries/S03.pdf)
+- [x] [Seminary 4](/Seminaries/S04.pdf)
 
 ## EXTRA
 
 - [x] [Special exam meeting](/ConsultatieFLP.pdf)
 
 - [x] [Prolog Exam Problem](#problema-1)
-
 
 
 ### Problema 1
